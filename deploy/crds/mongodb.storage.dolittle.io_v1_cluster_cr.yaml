@@ -1,0 +1,7 @@
+apiVersion: mongodb.storage.dolittle.io/v1
+kind: Cluster
+metadata:
+  name: example-cluster
+spec:
+  # Add fields here
+  size: 3
