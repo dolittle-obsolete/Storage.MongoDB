@@ -3,5 +3,10 @@ kind: Cluster
 metadata:
   name: example-cluster
 spec:
-  # Add fields here
-  size: 3
+  replicas: 2
+  volumeClaimTemplate:
+    accessModes: ["ReadWriteOnce"]
+    resources:
+      requests:
+        storage: "8Gi"
+    storageClassName: "managed-premium"
